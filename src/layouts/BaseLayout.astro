@@ -14,13 +14,13 @@ const { pageTitle } = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<div>
 			<Header />
-		
-			<slot />
-
+			
+			<div class="container flex justify-center flex-col py-5 px-5 space-y-5 text-gray-600 mx-auto">
+				<slot />
+			</div>
+			
 			<Footer />
-		</div>
         
 	</body>
 </html>
